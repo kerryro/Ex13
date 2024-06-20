@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Картинка</title>
+
+<style>
+img {
+width: 200px;
+height: 200px;
+transition: transform 0.5s;
+}
+</style>
+
+</head>
+
+<body>
+<img src="Картинка.jpg" alt="Картинка" onmouseover="enlargeImage(this)" onmouseout="restoreImage(this)">
+
+<script>
+function enlargeImage(img) {
+img.style.transform = "scale(1.5)";//scale-изменение размера картинки
+}
+function restoreImage(img) {
+img.style.transform = "scale(1)";
+}
+</script>
+
+</body>
+</html>
